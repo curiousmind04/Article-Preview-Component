@@ -253,18 +253,25 @@ li img {
     justify-content: center;
     align-items: center;
   }
-  .bubble::before {
+  .bubble:before {
     content: "";
     position: absolute;
     width: 0;
     height: 0;
-    bottom: -0.75rem;
-    transform: rotate(180deg);
-    left: 7rem;
+    top: 100%;
     border: 0.75rem solid transparent;
-    border-top: none;
-    border-bottom-color: hsl(217, 19%, 35%);
+    border-top-color: hsl(217, 19%, 35%);
   }
+  /* .bubble:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 100%;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-right: 36px solid hsl(217, 19%, 35%);
+  } */
   .bubble-open {
     display: block;
   }
