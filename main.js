@@ -1,6 +1,6 @@
 const btn = document.querySelector(".btn");
-const desktopBtn = document.querySelector(".desktop-btn");
 const shareBtn = document.querySelector(".share-btn");
+const desktopBtn = document.querySelector(".desktop-btn");
 const user = document.querySelector(".user");
 const share = document.querySelector(".share-section");
 const svg = document.querySelector(".svg-path");

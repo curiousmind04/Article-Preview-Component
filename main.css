@@ -244,9 +244,9 @@ li img {
     padding: 1.125em 1.5em;
     font-size: 1.25em;
     border-radius: 0.75rem;
-    bottom: -44px;
+    bottom: -2.75rem;
     left: 33.75rem;
-    z-index: 2;
+    z-index: 1;
     height: 3.5rem;
     display: flex;
     justify-content: center;
@@ -257,7 +257,7 @@ li img {
     position: absolute;
     width: 0;
     height: 0;
-    bottom: -12px;
+    bottom: -0.75rem;
     transform: rotate(180deg);
     left: 7rem;
     border: 0.75rem solid transparent;
@@ -267,12 +267,10 @@ li img {
   .bubble-open {
     display: block;
   }
-}
-
-.toggle-svg {
-  fill: #fff;
-}
-
-.toggle-btn {
-  background: hsl(214, 17%, 51%);
+  .toggle-svg {
+    fill: #fff;
+  }
+  .toggle-btn {
+    background: hsl(214, 17%, 51%);
+  }
 }
