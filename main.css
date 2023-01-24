@@ -61,12 +61,7 @@ h1 {
   line-height: 1.3rem;
 }
 
-.user-container-desktop {
-  display: none;
-}
-
-.user,
-.user-desktop {
+.user {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,8 +105,7 @@ h2 {
   color: hsl(212, 23%, 69%);
 }
 
-.btn,
-.desktop-btn {
+.btn {
   background: #ecf2f8;
   height: 2rem;
   width: 2rem;
@@ -153,8 +147,7 @@ h2 {
   align-items: center;
 }
 
-.share-section h3,
-.bubble h3 {
+.share-section h3 {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   color: hsl(212, 32%, 77%);
@@ -177,11 +170,6 @@ li img {
   vertical-align: middle;
 }
 
-.bubble-container {
-  position: relative;
-  display: none;
-}
-
 .open {
   display: block;
 }
@@ -200,10 +188,13 @@ li img {
     height: 17.5rem;
     display: flex;
     flex-direction: row;
+    overflow: visible;
   }
   .image-container {
     width: 23.75rem;
     height: 17.5rem;
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
   }
   .image-container img {
     height: 100%;
@@ -223,37 +214,35 @@ li img {
     margin-bottom: 0.8rem;
   }
   .user-container {
-    display: none;
+    display: block;
   }
   .share {
     display: none;
+    position: relative;
   }
-  .user-container-desktop {
-    display: block;
-  }
-  .user-desktop {
+  .user {
     min-width: 100%;
     margin-top: 1.2rem;
   }
   .social-icons {
     width: 11.56rem;
   }
-  .bubble {
+  .share-section {
     position: absolute;
     width: 15.5rem;
     background-color: hsl(217, 19%, 35%);
     padding: 1.125em 1.5em;
     font-size: 1.25em;
     border-radius: 0.75rem;
-    bottom: -2.75rem;
-    left: 33.75rem;
+    top: 128px;
+    right: -68px;
     z-index: 1;
     height: 3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .bubble:before {
+  .share-section:before {
     content: "";
     position: absolute;
     width: 0;
@@ -262,7 +251,10 @@ li img {
     border: 0.75rem solid transparent;
     border-top-color: hsl(217, 19%, 35%);
   }
-  /* .bubble:after {
+  .share-section button {
+    display: none;
+  }
+  /* .share-section:after {
     content: "";
     position: absolute;
     width: 0;
@@ -272,7 +264,7 @@ li img {
     border-bottom: 13px solid transparent;
     border-right: 36px solid hsl(217, 19%, 35%);
   } */
-  .bubble-open {
+  .open {
     display: block;
   }
   .toggle-svg {
