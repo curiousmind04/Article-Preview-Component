@@ -27,6 +27,7 @@ body {
   width: 20.35rem;
   border-radius: 0.75rem;
   overflow: hidden;
+  position: relative;
 }
 
 .image-container {
@@ -61,23 +62,15 @@ h1 {
   line-height: 1.3rem;
 }
 
-.user {
+.user-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   max-width: 15.95rem;
   margin-bottom: 0.75rem;
   margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
-}
-
-.user-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 10.625rem;
-  margin-right: 0.5rem;
 }
 
 .user-picture {
@@ -94,6 +87,7 @@ h1 {
 
 .author-date {
   line-height: 1.2rem;
+  margin-left: 1rem;
 }
 
 h2 {
@@ -113,6 +107,7 @@ h2 {
   border-radius: 50%;
   padding-top: 2px;
   cursor: pointer;
+  margin-left: auto;
 }
 
 .share-btn {
@@ -130,6 +125,11 @@ h2 {
 .share {
   display: none;
   background: hsl(217, 19%, 35%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .share-section {
@@ -174,10 +174,6 @@ li img {
   display: block;
 }
 
-.hide {
-  display: none;
-}
-
 @media (min-width: 42.5rem) {
   body {
     min-width: 56.25rem;
@@ -214,15 +210,12 @@ li img {
     margin-bottom: 0.8rem;
   }
   .user-container {
-    display: block;
+    visibility: visible;
+    min-width: 100%;
+    margin-top: 1.2rem;
   }
   .share {
     display: none;
-    position: relative;
-  }
-  .user {
-    min-width: 100%;
-    margin-top: 1.2rem;
   }
   .social-icons {
     width: 11.56rem;
@@ -234,8 +227,8 @@ li img {
     padding: 1.125em 1.5em;
     font-size: 1.25em;
     border-radius: 0.75rem;
-    top: 128px;
-    right: -68px;
+    bottom: 96px;
+    right: -69px;
     z-index: 1;
     height: 3.5rem;
     display: flex;
