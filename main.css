@@ -7,7 +7,7 @@
 }
 
 html {
-  min-width: 376px;
+  min-width: 23.5rem;
 }
 
 body {
@@ -17,14 +17,14 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  min-height: 44rem;
-  min-width: 376px;
+  min-height: 40rem;
+  min-width: 23.5rem;
   font-size: 0.8125rem;
 }
 
 .container {
   background: #fff;
-  width: 327.11px;
+  width: 20.35rem;
   border-radius: 0.75rem;
   overflow: hidden;
 }
@@ -43,7 +43,7 @@ body {
 }
 
 main {
-  width: 78%;
+  width: 78.5%;
   margin: auto;
 }
 
@@ -70,8 +70,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 255.14px;
-  margin-bottom: 1rem;
+  max-width: 15.95rem;
+  margin-bottom: 0.75rem;
   margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
@@ -81,7 +81,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 170px;
+  width: 10.625rem;
   margin-right: 0.5rem;
 }
 
@@ -98,7 +98,6 @@ h1 {
 }
 
 .author-date {
-  /* padding-right: 2.4rem; */
   line-height: 1.2rem;
 }
 
@@ -143,7 +142,7 @@ h4 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 327.11px;
+  max-width: 20.35rem;
   margin: auto;
 }
 
@@ -166,7 +165,7 @@ h4 {
 }
 
 ul {
-  width: 95px;
+  width: 5.94rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -192,18 +191,18 @@ li img {
 
 @media (min-width: 42.5rem) {
   body {
-    min-width: 950px;
+    min-width: 56.25rem;
     min-height: 25rem;
   }
   .container {
-    width: 720px;
-    height: 280px;
+    width: 45rem;
+    height: 17.5rem;
     display: flex;
     flex-direction: row;
   }
   .image-container {
-    width: 380px;
-    height: 280px;
+    width: 23.75rem;
+    height: 17.5rem;
   }
   .image-container img {
     height: 100%;
@@ -236,11 +235,11 @@ li img {
     margin-top: 1.2rem;
   }
   .social-icons {
-    width: 185px;
+    width: 11.56rem;
   }
   .bubble {
     position: absolute;
-    width: 16rem;
+    width: 15.5rem;
     background-color: hsl(217, 19%, 35%);
     padding: 1.125em 1.5em;
     font-size: 1.25em;
@@ -269,13 +268,6 @@ li img {
     display: block;
   }
 }
-
-/* @media (max-width: 20rem) {
-  .user {
-    flex-direction: column;
-    height: 6rem;
-  }
-} */
 
 .toggle-svg {
   fill: #fff;
