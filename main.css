@@ -101,8 +101,9 @@ h1 {
   line-height: 1.2rem;
 }
 
-h4 {
+h2 {
   color: hsl(217, 19%, 35%);
+  font-size: 0.8125rem;
 }
 
 .author-date p {
